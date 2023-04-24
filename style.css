@@ -20,18 +20,12 @@ li{
 }
 .main-header{
     display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 35px;
     z-index: 3;
-}
-.main-header .logo-div{
-    position: relative;
-    left: 10%;
-}
-.header-menu{
-    position: relative;
-    left: 12%;
-    right: 25%;
+    width: 100% !important;
+    padding-left: 50px;
 }
 .header-menu ul{
     display: flex;
@@ -47,11 +41,12 @@ li{
     font-size: 15px;
 }
 .shop-menu{
-    position: relative;
-    left: 35%;
     margin-top: 8px;
     height: 21px;
     font-weight: bold !important;
+}
+.shop-block{
+    display: none;
 }
 .shop-menu a{
     font-size: 15px !important;
@@ -63,31 +58,27 @@ li{
     height: auto;
 }
 .hamburger{
-    position: fixed;
-    top: 46px;
-    right: 40px;
-    z-index: 16;
     background-color: none;
     width: 20px;
     height: 20px;
     cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .line1,
 .line2,
 .line3{
-    position: absolute;
     width: 17px;
     height: 2px;
-    top: 0;
-    left: 0;
     background-color: #fff;
     transition: all 0.6s;
+    margin: 0;
 }
 .line2{
-    margin-top: 5px;
+    margin-top: 4px;
 }
 .line3{
-    margin-top: 10px;
+    margin-top: 4px;
 }
 .header-hover::after{
     content: '';
@@ -288,7 +279,7 @@ footer ul li a:hover{
     right: 0;
     width: 300px;
     height: 100%;
-    z-index: 4;
+    z-index: 3;
     background-color: #000;
     transform: translateX(100%);
     transition: transform 0.5s ease;
@@ -319,10 +310,10 @@ footer ul li a:hover{
     display: none;
 }
 .menu-ham .line1{
-    transform: rotate(45deg) translateY(7px);
+    transform: rotate(45deg) translateY(4px);
 }
 .menu-ham .line3{
-    transform: rotate(-45deg) translateY(-6px);
+    transform: rotate(-45deg) translateY(-5px);
 }
 .falcon9-body{
     animation: op 1s ease;    
